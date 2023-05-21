@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ProfilePhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:layout_toRightOf="@+id/ProfilePhoto"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/Online"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="-10dp"
+        android:visibility="gone"
+        android:src="@drawable/imageonline"
+        android:layout_below="@+id/Username"
+        android:layout_toRightOf="@+id/ProfilePhoto"
+        android:layout_toEndOf="@+id/ProfilePhoto"
+        />
+
+    <ImageView
+        android:id="@+id/Offline"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="-10dp"
+        android:visibility="gone"
+        android:src="@drawable/imageoffline"
+        android:layout_below="@+id/Username"
+        android:layout_toRightOf="@+id/ProfilePhoto"
+        android:layout_toEndOf="@+id/ProfilePhoto" />
+
+    <TextView
+        android:id="@+id/LastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_toRightOf="@id/ProfilePhoto"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:maxLines="1"/>
+
+</RelativeLayout>

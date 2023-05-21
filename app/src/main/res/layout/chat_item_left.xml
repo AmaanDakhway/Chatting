@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ProfilePhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/ShowMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ProfilePhoto"
+        android:background="@drawable/background_left"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:text="HELLO"/>
+
+    <TextView
+        android:id="@+id/TextSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seen"
+        android:visibility="gone"
+        android:layout_below="@+id/ProfilePhoto"/>
+
+</RelativeLayout>
